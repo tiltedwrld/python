@@ -64,6 +64,11 @@ def power(a, p):
 
 
 #ex5
-def permute(list):
-    
+array = ["Verbitsky Matvey 17", "Ignatov Georgy 19", "Smirnov Alexander 20"]
+array = sorted(list, key = lambda x: int(x[-2]))
+minname = array[0]
 
+for k in range(0, len(array) - 1):
+    if array[k] < minname:
+        minname = array[k]
+        print(minname)
